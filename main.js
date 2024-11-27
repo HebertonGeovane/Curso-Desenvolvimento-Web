@@ -1,20 +1,16 @@
-//posso votar
-let idade = prompt('Digite sua Idade: ')
-let temTitulo = prompt('Tem Título de Eleitor? (sim/não): ')
-let idadeMinima = 18
+// Criando a calculadora de porcentagens
 
-// Converte a idade para número
-idade = parseInt(idade)
+let valorConta = 0
+let gorjeta = 0
+let valorTotal = 0
 
-if (idade >= idadeMinima && temTitulo === 'sim') {
-    console.log('Você pode Votar =) ');
-} else if (idade >= idadeMinima && temTitulo === 'não') {
-    console.log('Você Precisa de um Título para Votar =( ');
-} else if (idade < idadeMinima && temTitulo === 'sim') {
-    console.log('Você não tem idade mínima para votar =( ');
-} else {
-    console.log('Você não tem idade mínima para votar e precisa de um título para votar =( ');
-}
+valorConta = parseFloat(prompt('Digite o Valor da Compra ;'))
+gorjeta = parseFloat(prompt('Digite o Valor da gorjeta (decimal)% ;'))
+gorjeta = (valorConta * gorjeta ) / 100 
+valorTotal = valorConta + gorjeta 
+alert('O valor Total da Gorjeta é $ '  + valorTotal )
+
+
 
 
 
