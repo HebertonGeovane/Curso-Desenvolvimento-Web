@@ -1,10 +1,8 @@
+// input HTML
 
-let firstName = 'Heberton'
-let lastname =  'Geovane'
-let age = 39 
+let firstName = prompt('Digite seu Primeiro Nome: ')
+document.getElementById("greeting").innerHTML = firstName;
 
-console.log('Meu nome é ' + firstName + ' ' + lastname)
-console.log('Eu tenho' + ' '  +  age + ' ' + 'Anos')
 
 
 
