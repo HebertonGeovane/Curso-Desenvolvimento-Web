@@ -1,15 +1,20 @@
-// se quencia de operadore 
+//posso votar
+let idade = prompt('Digite sua Idade: ')
+let temTitulo = prompt('Tem Título de Eleitor? (sim/não): ')
+let idadeMinima = 18
 
-let a = 10
+// Converte a idade para número
+idade = parseInt(idade)
 
-let b = 5
-
-let c = 2.5
-
-let resultado = a * b  + c 
-
-console.log(resultado)
-
+if (idade >= idadeMinima && temTitulo === 'sim') {
+    console.log('Você pode Votar =) ');
+} else if (idade >= idadeMinima && temTitulo === 'não') {
+    console.log('Você Precisa de um Título para Votar =( ');
+} else if (idade < idadeMinima && temTitulo === 'sim') {
+    console.log('Você não tem idade mínima para votar =( ');
+} else {
+    console.log('Você não tem idade mínima para votar e precisa de um título para votar =( ');
+}
 
 
 
