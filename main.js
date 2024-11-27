@@ -1,8 +1,14 @@
-// arrays
+// se quencia de operadore 
 
-let friends = ['Alan' , 'Mark', 'Julia', 'Bella']
-console.log(friends[1])
-console.log(friends[3])
+let a = 10
+
+let b = 5
+
+let c = 2.5
+
+let resultado = a * b  + c 
+
+console.log(resultado)
 
 
 
