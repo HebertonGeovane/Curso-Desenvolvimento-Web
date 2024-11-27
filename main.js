@@ -1,15 +1,9 @@
 
-let colorList = []
-
-for (let i = 1 ; i <= 3; i++ ) {
-    let userColor = prompt('Digite a cor ' + i + ':')
-    colorList.push(userColor)
+for (let i = 1; i <= 5; i++) {
+    let listItem = document.createElement('li'); 
+    listItem.textContent = 'Item ' + i;
+    numberList.appendChild(listItem);
 }
-
-document.getElementById('listacores').innerHTML = colorList;
-
-
-//alert('Sua lista de Cores ficou assim:' + colorList)
 
 
 
