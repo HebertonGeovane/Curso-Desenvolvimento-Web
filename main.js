@@ -1,12 +1,9 @@
 
-for (let i = 1; i <= 5; i++) {
-    let listItem = document.createElement('li'); 
-    listItem.textContent = 'Item ' + i;
-    numberList.appendChild(listItem);
+
+function changeColor() {
+    let titleH1 = document.getElementById('changeh1')
+    titleH1.style.color = 'red'
 }
-
-
-
 
 
 
